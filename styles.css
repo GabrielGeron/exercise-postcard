@@ -1,0 +1,67 @@
+body {
+	background: black;
+}
+* {
+	border: 1px dashed red;
+	min-height: 10px;
+}
+.postcard {
+	background: white; /* Fondo blanco */
+	width: 400px; /* Ancho de 400px */
+	height: 300px; /* Altura de 300px */
+	margin: auto; /* Margen automático para centrar el elemento horizontalmente */
+}
+.postcard-header {
+	display: flex;
+	justify-content: space-between; /* Espacio entre el título y la imagen */
+	align-items: center; /* Centrar verticalmente los elementos */
+	font-family: cursive;
+}
+.postcard-header img {
+	width: 50px;
+	height: 50px;
+}
+.postcard-header h1 {
+	width: 100%; /* Ocupar todo el espacio disponible */
+	margin: 0; /* Eliminar los márgenes */
+}
+.postcard-body {
+	display: flex;
+	margin: 0;
+	font-family: cursive;
+}
+.body-left p:first-child {
+	margin-top: 0; /* Elimina el margen superior del primer párrafo */
+}
+.body-left,
+.body-right {
+	padding: 10px;
+	font-family: cursive;
+}
+.body-right input::placeholder {
+	font: italic 16px cursive, sans-serif;
+}
+
+input {
+	border: none; /* Elimina todos los bordes */
+	border-bottom: 1px solid rgb(171, 167, 167); /* Agrega un borde inferior gris */
+}
+p {
+	font-size: 12px;
+}
+/* Aplicar text-align: center al .postcard-footer para centrar su contenido */
+.postcard-footer {
+	text-align: center;
+}
+
+/* Aplicar background más oscuro y padding al botón */
+button {
+	background-color: rgb(147, 141, 141);
+	padding: 5px 5px;
+	color: black;
+	border: none; /* Elimina el borde del botón */
+	width: auto; /* Permite que el ancho del botón se ajuste automáticamente al contenido */
+	height: auto; /* Permite que la altura del botón se ajuste automáticamente al contenido */
+	display: inline-block;
+	font-family: cursive;
+}
